@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".AttractionFragment.HotAttractions"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/logoutlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textColor="@drawable/logout_color"
+            android:paddingTop="10dp"
+            tools:ignore="MissingConstraints"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.853"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_search_gray"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintVertical_bias="0.0"/>
+    <Button
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_search_pressed"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="316dp"
+            android:layout_marginRight="316dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" android:id="@+id/hot_att_search_btn"
+            android:layout_marginStart="0dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginLeft="0dp"/>
+
+
+    <!--<LinearLayout-->
+            <!--android:layout_width="243dp"-->
+            <!--android:layout_height="66dp"-->
+            <!--android:orientation="vertical"-->
+            <!--tools:ignore="MissingConstraints"-->
+            <!--tools:layout_editor_absoluteY="16dp"-->
+            <!--tools:layout_editor_absoluteX="56dp">-->
+
+
+        <!--&lt;!&ndash;<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+        <!--&lt;!&ndash;xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+        <!--&lt;!&ndash;tools:context=".FragmentAttractions"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+        <!--<LinearLayout-->
+                <!--android:layout_width="225dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="10dp">-->
+            <!--&lt;!&ndash;<TextView android:layout_width="wrap_content"&ndash;&gt;-->
+                      <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                      <!--&lt;!&ndash;android:text="排序:"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<Button android:layout_width="55dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="距離"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/sortbydistance"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@drawable/logout_color"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="@drawable/radious"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/searchSpot"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:hint="Search..."&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:focusedByDefault="false"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="45dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_margin="5dp" android:textSize="16dp"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<Button android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/sortbyhot"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/radious"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#fff"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="15dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="熱門度"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/logoutlink"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/logout"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingLeft="50dp"/>&ndash;&gt;-->
+        <!--</LinearLayout>-->
+        <!--&lt;!&ndash;android:paddingLeft="340dp" &ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="20dp"&ndash;&gt;-->
+
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="@string/search_by"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="@string/date"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="10dp"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Place"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="10dp"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Budget"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="10dp"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Style"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginLeft="10dp"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+                <!--android:id="@+id/Myspot"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:text="我的景點"-->
+                <!--android:background="@drawable/rounded_trip_button"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:textColor="#fff"/>-->
+        <!--<Button-->
+                <!--android:id="@+id/hotspot"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:text="熱門景點"-->
+                <!--android:background="@drawable/rounded_trip_button"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:textColor="#fff"/>-->
+        <!--<Button-->
+                <!--android:id="@+id/NewSpot"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:text="最新景點"-->
+                <!--android:background="@drawable/rounded_trip_button"-->
+                <!--android:layout_marginLeft="10dp"-->
+
+                <!--android:textColor="#fff" />-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="410dp"
+            android:layout_height="650dp"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/round_bg"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/constraintLayout2"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp">
+        <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recyclerView_main"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_width="308dp"
+                android:layout_height="443dp"
+                android:layout_margin="10dp"
+
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.272">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="405dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:id="@+id/top_byn_lo"
+            tools:ignore="MissingConstraints"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.078" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp">
+        <Button
+                android:id="@+id/hotspot"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_hot_att_hot"
+                android:textColor="#fff"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"/>
+        <Button
+                android:id="@+id/NewSpot"
+                android:layout_width="82dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_small_new_att_pressed"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.025"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"/>
+        <Button
+                android:id="@+id/MySpot"
+                android:layout_width="82dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_small_my_att_pressed"
+                android:textColor="#fff"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.974"
+                app:layout_constraintVertical_bias="1.0"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="472dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="1.0" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp">
+        <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/nav_home_pressed"
+                android:id="@+id/btn_home"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintVertical_bias="0.0"/>
+        <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_iconbtn_05"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/btn_att"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/btn_home"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_travel" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"/>
+        <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/nav_travel_pressed"
+                android:id="@+id/btn_travel" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="96dp"
+                android:layout_marginRight="96dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0" app:layout_constraintHorizontal_bias="0.852"/>
+        <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/nav_profile_pressed"
+                android:id="@+id/btn_profile"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/btn_travel"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+
+        <!-- <com.google.android.material.bottomnavigation.BottomNavigationView
+                 android:id="@+id/nav_view"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginEnd="0dp"
+                 android:layout_marginStart="0dp"
+                 android:background="?android:attr/windowBackground"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintLeft_toLeftOf="parent"
+                 app:layout_constraintRight_toRightOf="parent"
+                 app:menu="@menu/bottom_nav_menu"/>
+     -->

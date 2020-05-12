@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_margin="10dp">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <!--android:layout_weight="1">-->
+        <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/myspotpic"
+                android:background="#DDDDDD"
+                android:scaleType="centerCrop"
+        />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2.0"
+            android:orientation="horizontal">
+            <!--android:paddingLeft="30dp">-->
+
+        <TextView
+                android:id="@+id/myspotname"
+                android:text="TextView"
+                android:layout_weight="1.8"
+                android:layout_width="76dp"
+                android:layout_height="16dp"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:marqueeRepeatLimit="-1"
+                android:layout_marginStart="44dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0"/>
+
+
+        <ImageButton
+
+                android:id="@+id/mycollection"
+                android:layout_width="16dp"
+                android:layout_height="15dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/icon_heart_unclick"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/myspotname"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginTop="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.2"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

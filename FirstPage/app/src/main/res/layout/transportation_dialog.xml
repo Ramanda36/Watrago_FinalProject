@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/popup_layout"
+>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="349dp"
+            android:layout_height="439dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:background="@drawable/trans_bg"
+            android:orientation="vertical"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交通方式"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintVertical_bias="0.019" android:id="@+id/textView"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@drawable/transport_line"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/driving" app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintVertical_bias="0.0" android:id="@+id/imageView12"/>
+
+        <ImageButton
+                android:id="@+id/bus"
+                android:background="@drawable/btn_trans_bus_pressed"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.113" app:layout_constraintStart_toEndOf="@+id/driving"/>
+
+        <ImageButton
+                android:id="@+id/subway"
+                android:background="@drawable/btn_trans_subway_pressed"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.113" app:layout_constraintStart_toEndOf="@+id/walk"/>
+
+        <ImageButton
+                android:id="@+id/driving"
+                android:background="@drawable/btn_trans_car_pressed"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:layout_marginTop="4dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.144"/>
+
+        <ImageButton
+                android:id="@+id/walk"
+                android:background="@drawable/btn_trans_walk_pressed"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.134" app:layout_constraintStart_toEndOf="@+id/bus"/>
+
+        <ScrollView android:layout_width="match_parent" android:layout_height="287dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView12" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintVertical_bias="1.0">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/transportation_description"
+                      android:textSize="18dp"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                      app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                      android:layout_marginStart="8dp"
+                      app:layout_constraintTop_toBottomOf="@+id/driving" android:layout_marginBottom="8dp"
+                      app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                      app:layout_constraintVertical_bias="1.0"/>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

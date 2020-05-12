@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<networ_security>
+    <domain-config cleartextTrafficPermitted="true">
+
+    </domain-config>
+</networ_security>

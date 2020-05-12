@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/popup_layout"
+>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="450dp"
+                      android:paddingLeft="10dp"
+                      android:paddingTop="18dp"
+                      android:background="@color/white"
+                      android:orientation="vertical"
+                      android:gravity="center">
+
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="40dp"
+                      android:id="@+id/AttName"
+                      android:textSize="20dp"
+                      android:paddingBottom="8dp"
+                      android:paddingTop="4dp"
+                      android:layout_marginLeft="15dp"
+                      android:layout_marginRight="15dp"
+                      android:gravity="center"
+                      android:text="attraction name"
+
+
+            />
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/att_info_add"
+                              android:id="@+id/address"
+                              android:textSize="16dp"
+                              android:paddingLeft="45dp"
+                              android:paddingBottom="8dp"
+
+                              android:paddingTop="7dp"
+                              android:gravity="center_vertical"
+                              android:text="addresss"
+                    />
+                    <FrameLayout
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                        <com.google.android.gms.maps.MapView
+                                android:id="@+id/mapView"
+                                android:layout_width="300dp"
+                                android:layout_height="100dp"
+                                android:gravity="center"/>
+                    </FrameLayout>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/tel"
+                              android:background="@drawable/att_info_phone"
+                              android:textSize="16dp"
+                              android:paddingLeft="45dp"
+                              android:paddingBottom="8dp"
+                              android:paddingTop="7dp"
+                              android:gravity="center_vertical"
+                              android:text="phone number"
+                    />
+
+                    <LinearLayout
+                            android:layout_width="325dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+
+                    >
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/txtTime"
+                                  android:background="@drawable/att_info_business_hour"
+                                  android:textSize="16dp"
+                                  android:paddingBottom="8dp"
+                                  android:paddingLeft="45dp"
+                                  android:text="營業時間"
+                                  android:paddingTop="10dp"
+                                  android:gravity="center_vertical"
+                        />
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/txtSunTime"
+                                  android:background="@drawable/att_info_bhour_sun"
+                                  android:textSize="16dp"
+                                  android:paddingBottom="8dp"
+                                  android:layout_marginLeft="20dp"
+                                  android:paddingTop="7dp"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="45dp"
+                        />
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/txtMonTime"
+                                  android:background="@drawable/att_info_bhour_mon"
+                                  android:textSize="16dp"
+                                  android:paddingBottom="8dp"
+                                  android:layout_marginLeft="20dp"
+                                  android:paddingTop="7dp"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="45dp"
+                        />
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/txtTueTime"
+                                  android:background="@drawable/att_info_bhour_tue"
+                                  android:textSize="16dp"
+                                  android:paddingBottom="8dp"
+                                  android:layout_marginLeft="20dp"
+                                  android:paddingTop="7dp"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="45dp"
+                        />
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/txtWedTime"
+                                  android:background="@drawable/att_info_bhour_wed"
+                                  android:textSize="16dp"
+                                  android:paddingBottom="8dp"
+                                  android:layout_marginLeft="20dp"
+                                  android:paddingTop="7dp"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="45dp"
+                        />
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/txtThuTime"
+                                  android:background="@drawable/att_info_bhour_thu"
+                                  android:textSize="16dp"
+                                  android:paddingBottom="8dp"
+                                  android:layout_marginLeft="20dp"
+                                  android:paddingTop="7dp"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="45dp"
+                        />
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/txtFriTime"
+                                  android:background="@drawable/att_info_bhour_fri"
+                                  android:textSize="16dp"
+                                  android:paddingBottom="8dp"
+                                  android:layout_marginLeft="20dp"
+                                  android:paddingTop="7dp"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="45dp"
+                        />
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/txtSatTime"
+                                  android:background="@drawable/att_info_bhour_sat"
+                                  android:textSize="16dp"
+                                  android:paddingBottom="8dp"
+                                  android:layout_marginLeft="20dp"
+                                  android:paddingTop="7dp"
+                                  android:gravity="center_vertical"
+                                  android:paddingLeft="45dp"
+                        />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+</LinearLayout>

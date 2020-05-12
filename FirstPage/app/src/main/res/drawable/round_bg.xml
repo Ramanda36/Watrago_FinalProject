@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:bottom="3dp"
+          android:right="3dp">
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+               android:shape="rectangle"
+               android:padding="10dp">
+            <stroke
+                    android:width="10dp"
+                    android:color="#ffffff" />
+
+            <solid android:color="#fffcd4"/>
+            <corners
+                    android:radius="30dp"/>
+
+        </shape>
+    </item>
+    <item
+            android:left="3dp"
+            android:top="3dp">
+        <shape
+                android:shape="rectangle">
+            <!--設定陰影顏色-->
+            <solid
+                    android:color="#56000000" />
+            <!--設定圓角的尺寸-->
+            <corners
+                    android:radius="30dp"/>
+        </shape>
+    </item>
+
+
+</selector>

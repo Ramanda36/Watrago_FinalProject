@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Watrago!</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_first_page">FirstPageActivity</string>
+    <string name="title_home">HOME</string>
+    <string name="title_att">ATTRACTIONS</string>
+    <string name="title_travel">TRAVEL</string>
+    <string name="title_personal">PROFILE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="successfully_sign_in">Successfully Sign in</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="failed">failed</string>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <string name="logout">LOGOUT</string>
+    <string name="search_by">search by</string>
+    <string name="date">Date</string>
+    <string name="title_activity_button_navigation">ButtonNavigationActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    //Search DropDown List Array
+    <string-array name="country_arrays">
+        <item>選擇縣市</item>
+        <item>現在位置</item>
+        <!--<item>-其他縣市開發中-</item>-->
+        <item>台北市</item>
+        <item>新北市</item>
+        <item>基隆市</item>
+        <item>桃園市</item>
+        <item>新竹縣</item>
+        <item>新竹市</item>
+        <item>苗栗縣</item>
+        <item>台中市</item>
+        <item>彰化縣</item>
+        <item>南投縣</item>
+        <item>雲林縣</item>
+        <item>嘉義縣</item>
+        <item>台南市</item>
+        <item>高雄市</item>
+        <item>屏東縣</item>
+        <item>宜蘭縣</item>
+        <item>花蓮縣</item>
+        <item>台東縣</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
